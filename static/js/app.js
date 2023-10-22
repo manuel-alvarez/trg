@@ -9,6 +9,8 @@ async function initMap() {
         zoom: 12,
         mapId: map_id,
     });
+
+    initCenter();
 }
 
 initMap();
