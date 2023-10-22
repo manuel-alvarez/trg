@@ -1,0 +1,146 @@
+html,
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+    font-weight: 500;
+}
+#map {
+    height: 100%;
+}
+#tooltip {
+    pointer-events: none;
+    font-family: Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+    position: absolute;
+    z-index: 9;
+    font-size: 12px;
+    padding: 0 16px;
+    background: #333;
+    color: #EEE;
+}
+#header {
+    background-color: #FFF;
+    display: inline-flex;
+    -webkit-box-shadow: 0px 1px 1px 1px #CCC;
+    box-shadow: 0px 1px 1px 1px #CCC;
+    padding: 6px 0;
+    font-family: Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+    font-weight: 500;
+    justify-content: space-between;
+    line-height: 32px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+    #header h1 {
+        display: flex;
+        font-size: 18px;
+        font-weight: normal;
+        padding: 0 18px;
+        margin: 0;
+    }
+
+.bg-contenedores {
+    background-color: rgba(242, 242, 242, 0.4);
+    /*position: relative;*/
+}
+      
+
+.bg-contenedores1 {
+    background-color: #fefce8;
+    border: 2px solid #000;
+}
+
+
+.contenedor0 {
+    position: absolute;
+    width: 28rem;
+    height: 8%;
+    top: 29px;
+    left: 36px;
+    color: #444;
+    font-size: 16px !important;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+.autocomplete-container {
+    background-color: #fefce8;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* width: 358px; */
+    width: 160px;
+}
+    .autocomplete-container .input-group {
+        justify-content: space-around;
+    }
+    .autocomplete-container .input-group a {
+        margin: 0;
+        padding: 0;
+    }
+
+    #autocomplete {
+        display: none;
+    }
+
+    #autocomplete-icon {
+        display: none;
+    }
+
+    .autocomplete-container input {
+        border: 0;
+        background: none;
+    }
+
+    .autocomplete-container input:focus {
+        border: 0;
+        background: none;
+    }
+
+    #autocomplete-icon, #action-car-icon, .action-icon {
+        margin: 5px 7px;
+        font-size: 1.4em;
+        width: 26px;
+    }
+
+    #autocomplete-icon:hover, .action-icon:hover {
+        cursor: pointer;
+    }
+
+@media (max-width: 450px) {
+    .autocomplete-container {
+        display: none;
+        /* width: 210px !important; */
+    }
+}
+
+
+.tooltipContent {
+    background-color: #fefce8;
+    color: #000;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+  }
+  
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track,
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece,
+.gm-style .gm-style-iw-c {
+    background: #fefce8;
+    font-family: Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+}
+
+.gm-style-iw button {
+    display: none !important;
+}
+
+.gm-style .gm-style-iw-tc::after {
+    background-color: #fefce8;
+}
