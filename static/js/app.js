@@ -8,9 +8,11 @@ async function initMap() {
         center: center,
         zoom: 12,
         mapId: map_id,
+        disableDefaultUI: true,
+        zoomControl: true,
     });
 
     initCenter();
-}
 
-initMap();
+    return map;
+}

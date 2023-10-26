@@ -6,6 +6,12 @@ body {
     font-family: Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
     font-weight: 500;
 }
+body.with-header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 #map {
     height: 100%;
 }
@@ -21,7 +27,7 @@ body {
 }
 #header {
     background-color: #FFF;
-    display: inline-flex;
+    display: block;
     -webkit-box-shadow: 0px 1px 1px 1px #CCC;
     box-shadow: 0px 1px 1px 1px #CCC;
     padding: 6px 0;
@@ -29,7 +35,7 @@ body {
     font-weight: 500;
     justify-content: space-between;
     line-height: 32px;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     z-index: 5;
@@ -41,6 +47,16 @@ body {
         padding: 0 18px;
         margin: 0;
     }
+
+    #header img {
+        height: 32px;
+        width: 32px;
+        margin: 0 10px 0 0;
+    }
+
+#container {
+    height: 100%;
+}
 
 .bg-contenedores {
     background-color: rgba(242, 242, 242, 0.4);
@@ -67,60 +83,6 @@ body {
     font-weight: 600;
 }
 
-.autocomplete-container {
-    background-color: #fefce8;
-    border: 1px solid #000;
-    border-radius: 0.5rem;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    /* width: 358px; */
-    width: 160px;
-}
-    .autocomplete-container .input-group {
-        justify-content: space-around;
-    }
-    .autocomplete-container .input-group a {
-        margin: 0;
-        padding: 0;
-    }
-
-    #autocomplete {
-        display: none;
-    }
-
-    #autocomplete-icon {
-        display: none;
-    }
-
-    .autocomplete-container input {
-        border: 0;
-        background: none;
-    }
-
-    .autocomplete-container input:focus {
-        border: 0;
-        background: none;
-    }
-
-    #autocomplete-icon, #action-car-icon, .action-icon {
-        margin: 5px 7px;
-        font-size: 1.4em;
-        width: 26px;
-    }
-
-    #autocomplete-icon:hover, .action-icon:hover {
-        cursor: pointer;
-    }
-
-@media (max-width: 450px) {
-    .autocomplete-container {
-        display: none;
-        /* width: 210px !important; */
-    }
-}
-
-
 .tooltipContent {
     background-color: #fefce8;
     color: #000;
@@ -144,3 +106,26 @@ body {
 .gm-style .gm-style-iw-tc::after {
     background-color: #fefce8;
 }
+
+#panel {
+    background: white;
+    position: absolute;
+    bottom: 34px;
+    left: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    #panel h2 {
+        margin: 5px 10px;
+        padding: 0;
+        text-align: center;
+        color: #333;
+        font-size: 1.4em;
+    }
+
+    #panel h3 {
+        padding: 0;
+        margin: 0px 0 10px;
+        text-align: center;
+        font-size: 1.6em;
+    }

@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title>Un mapa para la TRG-CON</title>
+
+  <link rel="shortcut icon" type="image/png" href="/static/img/faviconExtraMile.png">
+  <link rel="apple-touch-icon" type="image/png" href="/static/img/faviconEMCapple-touch-icon.png">
+
+  <link rel="stylesheet" href="/static/styles/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+  <script>
+    const api_key = '{{ api_key }}'
+    const map_id = '{{ map_id }}'
+    const center = { lat: 43.66345542853074, lng: -7.595249973963875 }
+  </script>
+  <script>
+    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+      key: api_key,
+      v: "weekly",
+      // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+      // Add other bootstrap parameters as needed, using camel case.
+    });
+  </script>
+
+  <script src="https://unpkg.com/deck.gl@^8.9.0/dist.min.js"></script>
+  <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+
+</head>
+
+<body class="with-header">
+  <div id='header'>
+      <h1><img src="/static/img/octopus.png" alt="Un Pulpo" />Pescadería Suso - Ventas online 2022</h1>
+  </div>
+  <div id="container">
+      <div id='map'></div>
+  </div>
+  <div id="panel">
+    <h2>Total ventas 2023</h2>
+    <h3>2,845</h3>
+  </div>
+</body>
+    
+<script src="/static/js/app.js"></script>
+<script src="/static/js/center.js"></script>
+<script src="/static/js/sixth.js"></script>
+</html>
